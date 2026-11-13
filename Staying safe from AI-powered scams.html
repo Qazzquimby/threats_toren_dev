@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Staying safe from AI-powered scams</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d2433;--muted:#566074;--card:#fff;--line:#dcd8cf;--accent:#0b5cad;--warn:#a8321f;--warnbg:#fdeee9;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171f;--fg:#eceff5;--muted:#a3adc2;--card:#1d222d;--line:#343b4a;--accent:#7db6f5;--warn:#ff9a85;--warnbg:#2d1d1a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14171f;--fg:#eceff5;--muted:#a3adc2;--card:#1d222d;--line:#343b4a;--accent:#7db6f5;--warn:#ff9a85;--warnbg:#2d1d1a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:44rem;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:2rem;line-height:1.2;margin:.5rem 0}
+h2{font-size:1.45rem;line-height:1.25;margin:2.5rem 0 .75rem}
+h3{font-size:1.1rem;margin:0 0 .25rem}
+p{margin:.5rem 0}
+.lead{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;margin:.75rem 0}
+.rule{border-left:5px solid var(--accent)}
+.warn{border-left:5px solid var(--warn);background:var(--warnbg)}
+ul{padding-left:1.25rem;margin:.5rem 0}
+li{margin:.35rem 0}
+a{color:var(--accent)}
+a.c{font-size:.75rem;vertical-align:super;text-decoration:none;font-weight:700;padding:0 .15rem}
+.faces{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+.faces figure{margin:0;text-align:center;font-size:.8rem;color:var(--muted)}
+.ph{width:96px;height:96px;border-radius:12px;background:var(--line);fill:var(--muted);display:block}
+button{font:inherit;font-weight:700;background:var(--accent);color:var(--bg);border:0;border-radius:10px;padding:.7rem 1.2rem;cursor:pointer;min-height:48px}
+#ans{font-weight:700}
+.small{font-size:.85rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<h1>Staying safe from AI-powered scams</h1>
+<p class="lead">AI has made scams cheaper, more convincing and far more numerous. The good news: a few habits beat almost all of them.</p>
+
+<h2>Can you tell?</h2>
+<p>How many of these five people are real?</p>
+<!-- Replace the five placeholders below with the AI headshots (embedded as data: URIs) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="p" viewBox="0 0 64 64"><circle cx="32" cy="24" r="12"/><path d="M8 60c2-16 14-22 24-22s22 6 24 22z"/></symbol></svg>
+<div class="faces">
+<figure><img src="1.jpg" class="ph"></svg>Person 1</figure>
+<figure><img src="2.jpg" class="ph"><use href="#p"/></img>Person 2</figure>
+<figure><img src="3.jpg" class="ph"><use href="#p"/></img>Person 3</figure>
+<figure><img src="4.jpg" class="ph"><use href="#p"/></img>Person 4</figure>
+<figure><img src="5.jpg" class="ph"><use href="#p"/></img>Person 5</figure>
+</div>
+<button id="rv" type="button">Reveal</button>
+<p id="ans" hidden>None. All five are AI-generated, and none of these people exist.</p>
+<p>In company-run surveys, US adults scored barely better than chance at telling real from AI-made images and video<a class="c" href="https://www.veriff.com/pr-news/deepfakes-report-2026-us" target="_blank" rel="noopener" title="Veriff Deepfakes Report 2026 (1,000 US adults, 16 images each)">↗</a>. A study of nearly 3,200 older adults found them only moderately better than a coin flip<a class="c" href="https://www.aarp.org/personal-technology/why-ai-slop-is-dangerous/" target="_blank" rel="noopener" title="AARP, describing a CareSide study">↗</a>.</p>
+
+<h2>What AI can do now</h2>
+<ul>
+<li>Copy someone’s voice from a few seconds of audio<a class="c" href="https://www.krcu.org/2026-02-11/consumer-handbook-ai-grandparent-emergency-scams" target="_blank" rel="noopener" title="KRCU Public Radio">↗</a></li>
+<li>Swap a face live on a video call</li>
+<li>Create realistic photos and videos of people who don’t exist</li>
+<li>Build a professional-looking online store in minutes<a class="c" href="https://guard.io/blog/how-to-check-if-a-website-is-safe-to-buy-from" target="_blank" rel="noopener" title="Guardio">↗</a></li>
+<li>Write fake reviews and flawless, personalized messages in any language</li>
+<li>Run fake profiles with photos, post histories and networks of fake followers</li>
+</ul>
+
+<h2>Why it’s getting worse</h2>
+<ul>
+<li><strong>It’s cheap, so it scales.</strong> Instead of one person carefully building one scam site, hundreds can be generated at once, each with polished design and fake reviews.</li>
+<li><strong>The old “tells” are gone.</strong> Strange hands and garbled text used to give fakes away. Fixed. Any flaw you can spot today will probably be fixed within a year or two, so don’t rely on spotting them.</li>
+<li><strong>The losses are growing.</strong> Canadians reported losing $704 million in 2025<a class="c" href="https://antifraudcentre-centreantifraude.ca/features-vedette/2026/02/top-fraud-2025-fraudes-plus-courantes-eng.htm" target="_blank" rel="noopener" title="Canadian Anti-Fraud Centre, Top 10 frauds in 2025">↗</a>, almost four times 2020’s level<a class="c" href="https://cyberseniors.org/stories/cyber-seniors-in-the-news/how-canadian-seniors-can-stay-ahead-of-cyber-scams/" target="_blank" rel="noopener" title="Globe and Mail via Cyber-Seniors">↗</a>. Fewer than one in 10 frauds are even reported<a class="c" href="https://www.advisor.ca/industry-news/industry/canadians-lost-704-million-to-fraud-in-2025/" target="_blank" rel="noopener" title="Advisor.ca, citing the Competition Bureau">↗</a>.</li>
+</ul>
+
+<h2>Judge the request, not the content</h2>
+<p>If you can’t tell what’s real by looking, stop trying. Look at what they’re asking for. Be suspicious of anything involving <strong>moving money</strong>, <strong>paying a fee</strong>, an <strong>investment opportunity</strong>, a <strong>relative who needs cash</strong>, or <strong>access to your computer or accounts</strong>.</p>
+
+<h2>Five rules that beat most scams</h2>
+<div class="card rule"><h3>1. If they contacted you, don’t act on it</h3>
+<p>That means calls, texts, emails, messages and ads. Hang up, then check through your <em>own</em> account, or a number or website you already have (such as the number on the back of your card). The phone number shown and the email “from” address can both be faked, so neither proves anything.</p>
+<p>Calls about a “package” or “immigration” usually come from companies you have no account with. There’s nothing to check. Hang up. Real agencies don’t threaten arrest or demand payment over the phone.</p>
+<p><strong>Landline?</strong> Call back from a cell phone. Scammers can keep a landline connected after you hang up, play a fake dial tone, and answer when you dial the “real” number<a class="c" href="https://bc.ctvnews.ca/beware-of-the-delayed-disconnect-phone-scam-1.5375708" target="_blank" rel="noopener" title="CTV News Vancouver">↗</a>.</p></div>
+
+<div class="card rule"><h3>2. Your bank never needs you to move money to “keep it safe”</h3>
+<p>In “bank investigator” scams, a caller claims your account is compromised and tells you to move your money to a “safe account.” That account belongs to the scammer. Banks protect money by freezing it, never by asking you to move it. These scams are rising: about $28.6 million lost in just the first half of 2026<a class="c" href="https://antifraudcentre-centreantifraude.ca/features-vedette/2026/08/fraud-trends-tendances-matiere-fraude-eng.htm" target="_blank" rel="noopener" title="Canadian Anti-Fraud Centre, Fraud Trends, first 6 months of 2026">↗</a>. “Don’t tell anyone” is part of the script.</p></div>
+
+<div class="card rule"><h3>3. Some payments can’t be undone</h3>
+<p>If someone who contacted you asks for any of these, it’s a scam: <strong>gift cards</strong>; <strong>cryptocurrency</strong> (digital money, including “Bitcoin machines” in stores that turn your cash into crypto and send it to someone); a <strong>wire or e-transfer to a stranger</strong>; or <strong>cash handed to a courier</strong>.</p></div>
+
+<div class="card rule"><h3>4. Never give remote access or read out codes</h3>
+<p>Don’t let anyone take control of your computer or phone, and never read out a code that was texted to you.</p></div>
+
+<div class="card rule"><h3>5. Get a second opinion before sending money</h3>
+<p>Tell someone you trust what’s happening before you pay. Scammers demand urgency and secrecy because a calm outsider ruins the plan. This isn’t for every call; only when someone who contacted you wants money or access.</p></div>
+
+<h2>Facebook ads are not a safe place</h2>
+<div class="card warn">
+<p>Reuters reported in November 2025 on Meta’s internal documents. They projected about 10% of 2024 revenue (roughly US$16 billion) from ads for scams and banned goods<a class="c" href="https://www.khaleejtimes.com/business/tech/meta-earns-fortune-fraudulent-ads" target="_blank" rel="noopener" title="Reuters, via Khaleej Times">↗</a>, and estimated billions of “higher-risk” scam ads shown daily<a class="c" href="https://www.tweaktown.com/news/108738/meta-projected-it-will-earn-billions-from-intentionally-ignoring-scam-advertisements/index.html" target="_blank" rel="noopener" title="TweakTown, summarizing Reuters">↗</a>. One internal estimate said Meta’s platforms were involved in a third of successful scams in the US. Meta disputes how these documents portray it, calling the revenue figure rough and overly inclusive, and says it fights scams. It also covers <strong>Instagram and WhatsApp</strong>, and an internal review reportedly found scams easier to advertise on Meta than on Google<a class="c" href="https://www.bernama.com/en/news.php?id=2488168" target="_blank" rel="noopener" title="Reuters, via Bernama">↗</a>.</p>
+<ul>
+<li><strong>Treat every ad (“Sponsored”) as untrusted.</strong> Don’t buy, invest or sign up from one.</li>
+<li>Ads with celebrities, news-style stories, “guaranteed returns” or huge discounts are almost certainly fake.</li>
+<li>If something looks interesting, search for the company yourself.</li>
+<li>Clicking one scam ad can lead to seeing more<a class="c" href="https://www.tweaktown.com/news/108738/meta-projected-it-will-earn-billions-from-intentionally-ignoring-scam-advertisements/index.html" target="_blank" rel="noopener" title="TweakTown, summarizing Reuters">↗</a>. Ad blockers can’t be relied on either: uBlock Origin’s team stopped maintaining its Facebook filters<a class="c" href="https://privacysavvy.com/news/cybersecurity/ublock-origin-stops-facebook-ad-filters/" target="_blank" rel="noopener" title="PrivacySavvy">↗</a>.</li>
+</ul></div>
+
+<h2>Fake online stores: a different kind of scam</h2>
+<p>Most scams start with someone contacting you, so rule 1 doesn’t help here. <strong>You</strong> find the store, usually through an ad or a search. Nobody pressures you. You pay, then get nothing or junk, and they may have your card details.</p>
+<p>The sites are built to be thrown away: launched, advertised, then gone within weeks<a class="c" href="https://guard.io/blog/how-to-check-if-a-website-is-safe-to-buy-from" target="_blank" rel="noopener" title="Guardio">↗</a>. One researcher found 75% of the scam stores analyzed used AI-generated images and text<a class="c" href="https://www.wate.com/news/tennessee/holiday-shoppers-beware-fake-online-stores-are-already-open-for-business/amp/" target="_blank" rel="noopener" title="WATE, quoting University of Memphis research">↗</a>. Photos, designs and reviews (even reviewer photos) can all be fake, so judge the store by where it came from.</p>
+<div class="card rule"><h3>What actually works</h3>
+<ul>
+<li><strong>Don’t buy from ads or links.</strong> Type the brand’s real address, or search for it.</li>
+<li><strong>Check how new the site is.</strong> A brand-new site selling brand-name goods is a warning. <strong>WebSafely</strong> (a free Chrome extension for desktop; a newer tool) shows a scam score including site age. Age alone isn’t proof either way<a class="c" href="https://www.forcepoint.com/ko/blog/x-labs/scammers-exploit-tariff-anxiety-fake-stores" target="_blank" rel="noopener" title="Forcepoint X-Labs">↗</a>.</li>
+<li><strong>Search the store’s name plus “reviews” or “scam.”</strong> No history or lots of complaints means leave. Ignore reviews on the store’s own site.</li>
+<li><strong>Huge discounts on everything</strong> (60% off and up) are a red flag.</li>
+<li><strong>Pay with a credit card.</strong> You can usually dispute it. Don’t pay by e-transfer or crypto.</li>
+</ul></div>
+
+<h2>Other scams to know</h2>
+<div class="card"><h3>Investment scams</h3><p>The costliest by far: $351 million of the $704 million lost in 2025<a class="c" href="https://antifraudcentre-centreantifraude.ca/features-vedette/2026/02/top-fraud-2025-fraudes-plus-courantes-eng.htm" target="_blank" rel="noopener" title="Canadian Anti-Fraud Centre, Top 10 frauds in 2025">↗</a>. Often start with a social media ad or a friendly message. Be wary of any “can’t lose” offer.</p></div>
+<div class="card"><h3>“Grandchild in trouble” calls</h3><p>The voice may be a clone. Hang up and call the person on their own saved number. Some families agree on a code word.</p></div>
+<div class="card"><h3>Romance scams</h3><p>A long online relationship that turns to money. The photos and chats can be AI.</p></div>
+<div class="card"><h3>Recovery scams</h3><p>After a loss, someone offers to get the money back for a fee. Real authorities never charge for that<a class="c" href="https://www.tangerine.ca/en/thejuice/security-and-fraud/fraud-to-look-out-for-this-year" target="_blank" rel="noopener" title="Tangerine">↗</a>.</p></div>
+
+<h2>If it happens to you</h2>
+<ol>
+<li><strong>Call your bank or card company right away.</strong> That’s where money can sometimes be stopped.</li>
+<li><strong>Report to the Canadian Anti-Fraud Centre:</strong> 1-888-495-8501 or <a href="https://antifraudcentre-centreantifraude.ca" target="_blank" rel="noopener">antifraudcentre-centreantifraude.ca</a>.</li>
+<li><strong>Tell the police</strong> if you lost money or shared personal information.</li>
+</ol>
+<p><strong>Outside Canada:</strong> in the US, use ReportFraud.ftc.gov and ic3.gov, or the National Elder Fraud Hotline at 1-833-372-8311 (<a href="https://www.justice.gov/stopelderfraud" target="_blank" rel="noopener">justice.gov/stopelderfraud</a>). Elsewhere, search “[your country] report fraud” and use a government site.</p>
+<p>This happens to smart, careful people. Tell someone and report it. Shame is what scammers rely on.</p>
+<p class="small">Figures are from the Canadian Anti-Fraud Centre unless noted and change often. Tap a ↗ for the source.</p>
+</main>
+<script>
+document.getElementById("rv").onclick=function(){document.getElementById("ans").hidden=false;this.hidden=true};
+document.querySelectorAll("a.c").forEach(function(a,i){a.textContent=i+1});
+</script>
+</body>
+</html>
